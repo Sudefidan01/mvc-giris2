@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        @* View  sayfaları içerisinde bu karakterler arasında yorum yazabilirsiniz .*@
+        <h1> MVC Dersleri </h1>
+        @* Controller yapısı içerisinde tanımlamış olduğumuz veri taşıma değişkenlerini çağıralım *@
+        <p>
+            @ViewData["Mesaj1"]
+        </p>
+        <p>
+            @ViewBag.Mesaj2
+        </p>
+        <p>
+            @TempData["Mesaj3"]
+        </p>
+
+    </div>
+</body>
+</html>

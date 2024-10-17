@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Sayfa2</title>
+</head>
+<body>
+    <div> 
+        <h1> Sayfa 2 </h1>
+        <p>
+            @ViewData["Mesaj1"]
+        </p>
+        <p>
+            @ViewBag.Mesaj2
+        </p>
+        <p>
+            @TempData["Mesaj3"]
+        </p>
+    </div>
+</body>
+</html>
